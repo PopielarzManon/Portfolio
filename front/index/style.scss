@@ -90,6 +90,63 @@
     justify-self: center;
     justify-items: center;
     padding-top: 90px;
+    .tilta{
+      animation: tilta 1s  infinite ease-in-out;
+      
+      @keyframes tilta {
+        0%{
+          color: cadetblue;
+          
+        }
+        50%{
+          color: rgb(58, 167, 147);
+          transform: scale(1, 2);
+          -webkit-transform: scale(1, 2);
+          -moz-transform: scale(1, 2);
+          -o-transform: scale(1, 2);
+          transform-origin: 0% 50%
+          
+        }
+        100%{
+          color: cadetblue;
+          
+        }
+      }
+    }
+    .tilta2{
+      animation: tilta2 1s  infinite ease-in-out;
+      
+      @keyframes tilta2 {
+        0%{
+   
+          color: rgb(58, 167, 147);
+          transform: scale(1, 2);
+          -webkit-transform: scale(1, 2);
+          -moz-transform: scale(1, 2);
+          -o-transform: scale(1, 2);
+          transform-origin: 0% 50%
+          
+        }
+        50%{
+          color: cadetblue;
+          transform: scale(1, 1);
+          -webkit-transform: scale(1, 1);
+          -moz-transform: scale(1, 1);
+          -o-transform: scale(1, 1);
+          
+          
+        }
+        100%{
+          color: rgb(58, 167, 147);
+          transform: scale(1, 2);
+          -webkit-transform: scale(1, 2);
+          -moz-transform: scale(1, 2);
+          -o-transform: scale(1, 2);
+          transform-origin: 0% 50%
+          
+        }
+      }
+    }
 
 
   }
