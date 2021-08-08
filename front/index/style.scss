@@ -11,60 +11,97 @@
   html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: rgb(26, 26, 29);
+    background-size: cover;
     margin: 0;
-    background-color: rgb(46, 15, 69);
+
   }
   a{
     list-style: none;
-    color: rgb(191, 191, 191);
+    color: rgb(221, 221, 221);
     text-decoration: none;
     &:hover{
       color: rgb(255, 255, 255);
       cursor: pointer;
     }
   }
-  .head{
+  .header{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.401) ;
-    border-radius: 5vw;
+    background-color: rgba(69, 69, 69, 0.789) ;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    .head{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &:hover{
+        cursor: default;
+      }
+      .tilt:hover{
+        color: rgb(7, 148, 164);
+        cursor:default;
+        font-size: 2vw;
+        font-weight: 900;
+      }
 
+    }
     .sub{
       display: flex;
       flex-direction: row;
       justify-content: center;
+      font-size: 1vw;
+      .subtittle{
+  
+        margin-bottom: 1vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+      }
       
     }
     .tittle{
       margin-bottom: 1vw;
-      margin-top: 2vw;
-      font-size: 2vw;
-      font-weight:bold;
+      margin-top: 1vw;
+      font-size: 1.5vw;
+      display: flex;
     }
-    .subtittle{
-      font-size: 1vw;
-      margin-bottom: 2vw;
-      margin-right: 2vw;
-      margin-left: 2vw;
+    .tittle2{
+      margin-bottom: 1vw;
+      margin-top: 1vw;
+      margin-left: 1vw;
+      font-size: 1.5vw;
+      display: flex; 
     }
+
   }
   h1{
     margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     font-size: 2vw;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     justify-self: center;
     justify-items: center;
+    padding-top: 90px;
 
 
   }
-  #apropos{
+  #prez{
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.748);
+    height: 450px;
+    padding-bottom: 100px;
+  
     p{
       text-align: center;
     }
@@ -80,28 +117,20 @@
     }
 
   }
-#apropos{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.748);
-  
-}
+
 #portfolio{
   background-color: rgb(25, 115, 25);
-  height: 90vh;
+  
   
 }
 #autres{
   background-color: rgb(115, 53, 25);
-  height: 90vh;
+  
 }
   .end{
-    background-color: rgba(251, 181, 248, 0.34);
+    background-color: rgba(50, 50, 50, 0.789) ;
     padding-top: 1vw;
     padding-bottom: 1vw;
-    border-radius: 5vw;
     ul{
     display: flex;
     flex-direction: row;

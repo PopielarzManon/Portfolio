@@ -7,6 +7,8 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     margin: 0;
+    background-image:url("/front/loader/img/back.png");
+    background-size: cover;
 }
 .container{
     display: flex;
@@ -17,11 +19,13 @@ html, body {
     
         h1{
             font-size: 3vw;
+            color: azure;
         }
         h2{
             font-size: 1vw;
             animation: fadeIn ease 3s;
             animation-iteration-count: infinite;
+            color: azure;
             @keyframes fadeIn{
                 0% {
                   opacity:0;

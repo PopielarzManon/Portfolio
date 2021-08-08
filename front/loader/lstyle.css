@@ -9,6 +9,8 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
+  background-image: url("/front/loader/img/back.png");
+  background-size: cover;
 }
 
 .container {
@@ -30,6 +32,7 @@ html, body {
 
 .container h1 {
   font-size: 3vw;
+  color: azure;
 }
 
 .container h2 {
@@ -38,6 +41,7 @@ html, body {
           animation: fadeIn ease 3s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  color: azure;
 }
 
 @-webkit-keyframes fadeIn {
@@ -75,4 +79,4 @@ html, body {
     opacity: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=lstyle.css.map */
