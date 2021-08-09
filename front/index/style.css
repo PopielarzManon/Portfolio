@@ -10,6 +10,10 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   background-color: #1a1a1d;
   background-size: cover;
   margin: 0;
@@ -46,6 +50,7 @@ a:hover {
   top: 0;
   height: 80px;
   color: white;
+  padding-top: 1vw;
 }
 
 .header .head {
@@ -62,17 +67,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header .head:hover {
-  cursor: default;
-}
-
-.header .head .tilt:hover {
-  color: #0794a4;
-  cursor: default;
-  font-size: 2vw;
-  font-weight: 900;
 }
 
 .header .sub {
@@ -95,23 +89,15 @@ a:hover {
   margin-left: 2vw;
 }
 
-.header .tittle {
-  margin-bottom: 1vw;
-  margin-top: 1vw;
-  font-size: 1.5vw;
+.header .tittle1 {
+  font-size: 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .tittle2 {
-  margin-bottom: 1vw;
-  margin-top: 1vw;
-  margin-left: 1vw;
-  font-size: 1.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header .tittle1 img {
+  height: 5vw;
 }
 
 h1 {
@@ -273,6 +259,29 @@ h1 .tilta2 {
 
 #autres {
   background-color: #733519;
+}
+
+.contacts, .propos {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.propos {
+  height: 450px;
 }
 
 .end {

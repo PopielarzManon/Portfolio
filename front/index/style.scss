@@ -11,6 +11,10 @@
   html, body {
     max-width: 100%;
     overflow-x: hidden;
+
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    
     background-color: rgb(26, 26, 29);
     background-size: cover;
     margin: 0;
@@ -36,21 +40,13 @@
     top: 0;
     height: 80px;
     color: rgb(255, 255, 255);
+    padding-top: 1vw;
     .head{
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      &:hover{
-        cursor: default;
-      }
-      .tilt:hover{
-        color: rgb(7, 148, 164);
-        cursor:default;
-        font-size: 2vw;
-        font-weight: 900;
-      }
-
+      
     }
     .sub{
       display: flex;
@@ -65,19 +61,26 @@
       }
       
     }
-    .tittle{
-      margin-bottom: 1vw;
-      margin-top: 1vw;
-      font-size: 1.5vw;
+    // .tittle{
+    //   margin-bottom: 1vw;
+    //   margin-top: 1vw;
+    //   font-size: 1.5vw;
+    //   display: flex;
+    // }
+    .tittle1{
+      font-size: 2vw;
       display: flex;
+      img{
+        height: 5vw;
+      }
     }
-    .tittle2{
-      margin-bottom: 1vw;
-      margin-top: 1vw;
-      margin-left: 1vw;
-      font-size: 1.5vw;
-      display: flex; 
-    }
+    // .tittle2{
+    //   margin-bottom: 1vw;
+    //   margin-top: 1vw;
+    //   margin-left: 1vw;
+    //   font-size: 1.5vw;
+    //   display: flex; 
+    // }
 
   }
   h1{
@@ -182,6 +185,21 @@
 }
 #autres{
   background-color: rgb(115, 53, 25);
+  
+}
+
+.contacts, .propos{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  
+}
+.propos{
+  height: 450px;
   
 }
   .end{
