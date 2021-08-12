@@ -7,11 +7,11 @@
     scroll-behavior: smooth;
 
   }
-  
+  @media (min-width: 1279px) {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: hidden;
+    // overflow-y: hidden;
 
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
@@ -20,6 +20,11 @@
     background-size: cover;
     margin: 0;
 
+  }
+  .diff{
+    font-weight: bolder;
+    color:rgb(67, 196, 153);
+    
   }
   a{
     list-style: none;
@@ -193,10 +198,20 @@
     p{
       text-align: center;
     }
-    .diff{
-      font-weight: bolder;
-      color:rgb(67, 196, 153);
-      
+
+    .diff2{
+      color: rgb(205, 152, 255);
+      font-weight: bold;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 0.5vw;
+      img{
+        margin-left: 1vw;
+        height: 2vw;
+        width: 2vw;
+      }
+
     }
     
     img{
@@ -399,6 +414,10 @@
   }
 
   ///////////////----------------------------------------------------/////////////////////
+  .lign{
+    display: flex;
+    flex-direction: row;
+  }
 #autres{
   height: 300px;
   padding-top: 15vw;
@@ -481,6 +500,10 @@
   height: 300px;
   padding-top: 10vw;
   font-size: 1.5vw;
+  .diff{
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
   img{
     padding-top: 1vw;
     height: 10vw;
@@ -526,4 +549,5 @@
 
     }
   }
+}
 
