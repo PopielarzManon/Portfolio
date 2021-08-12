@@ -1,20 +1,20 @@
 * {
-  scroll-behavior: smooth;
   -webkit-transition: 0.3s;
-  transition: 0.3s;
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
-  background-color: rgba(50, 50, 50, 0.789);
+  background-color: #1e1e1e;
   background-size: cover;
   margin: 0;
 }
@@ -51,6 +51,7 @@ a:hover {
   height: 80px;
   color: white;
   padding-top: 1vw;
+  z-index: 3;
 }
 
 .header .head {
@@ -80,7 +81,8 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1vw;
+  font-size: 1.3vw;
+  padding-bottom: 1vw;
 }
 
 .header .sub .subtittle {
@@ -101,7 +103,7 @@ a:hover {
 }
 
 h1 {
-  margin-top: 2vw;
+  margin-top: 5vw;
   margin-bottom: 1vw;
   font-size: 2vw;
   color: white;
@@ -114,7 +116,28 @@ h1 {
   justify-self: center;
   justify-items: center;
   padding-top: 90px;
-  background-color: rgba(57, 57, 57, 0.789);
+  -webkit-animation-name: apar;
+          animation-name: apar;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes apar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 h1 .tilta {
@@ -219,8 +242,23 @@ h1 .tilta2 {
   }
 }
 
+#up:target {
+  -webkit-animation-name: apar;
+          animation-name: apar;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@keyframes apar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 #prez {
-  background-color: rgba(22, 22, 22, 0.789);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,34 +271,49 @@ h1 .tilta2 {
       -ms-flex-align: center;
           align-items: center;
   color: rgba(255, 255, 255, 0.748);
-  height: 450px;
-  padding-bottom: 100px;
+  height: 280px;
+  padding-bottom: 50px;
+  font-size: 1.5vw;
+  -webkit-animation-name: apar;
+          animation-name: apar;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@keyframes apar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #prez p {
   text-align: center;
 }
 
-.emoj1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#prez .diff {
+  font-weight: bolder;
+  color: #43c499;
 }
 
-.emoj1 img {
+#prez img {
   width: 20vw;
   margin-bottom: 2vw;
+}
+
+#prez .it {
+  margin-top: 2vw;
+  font-style: italic;
+  color: #43c499;
+  font-weight: bold;
 }
 
 #portfolio {
   height: 500px;
   color: #c2c2c2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -273,6 +326,26 @@ h1 .tilta2 {
           align-items: center;
   padding-top: 9vw;
   flex-direction: column;
+  font-size: 1.5vw;
+}
+
+#portfolio:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: apar;
+          animation-name: apar;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@keyframes apar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #portfolio .port {
@@ -289,9 +362,11 @@ h1 .tilta2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.5vw;
 }
 
 .slider {
+  z-index: 2;
   padding-top: 25vw;
   width: 100%;
   position: relative;
@@ -320,16 +395,17 @@ h1 .tilta2 {
 }
 
 .slider__nav {
+  z-index: 1;
   width: 12px;
   height: 12px;
   margin: 12px;
   margin-top: 5vw;
   border-radius: 50%;
   z-index: 10;
-  outline: 6px solid #ccc;
+  outline: 6px solid white;
   outline-offset: -6px;
-  -webkit-box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
-          box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  -webkit-box-shadow: 0 0 0 0 #969696, 0 0 0 0 rgba(51, 51, 51, 0);
+          box-shadow: 0 0 0 0 #969696, 0 0 0 0 rgba(51, 51, 51, 0);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -404,15 +480,24 @@ h1 .tilta2 {
   border-radius: 20px;
 }
 
+.slider__image:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .slider__caption {
   font-weight: 500;
   margin: 2rem 0 1rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: aliceblue;
   text-transform: uppercase;
 }
 
+.slider__caption:hover {
+  color: #00ffe5;
+}
+
 .slider__txt {
-  color: #bababa;
+  color: #f8f8f8;
   margin-bottom: 3rem;
   max-width: 50vw;
 }
@@ -444,7 +529,76 @@ h1 .tilta2 {
 }
 
 #autres {
-  background-color: #733519;
+  height: 300px;
+  padding-top: 15vw;
+  padding-bottom: 10vw;
+  color: aliceblue;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5vw;
+  display: none;
+}
+
+#autres:target:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: apar;
+          animation-name: apar;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@keyframes apar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#autres div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+#autres div .plus {
+  margin-top: 3vw;
+}
+
+#autres div .plus a {
+  color: #488772;
+}
+
+#autres div .plus a:hover {
+  color: aquamarine;
+  font-size: 1.5vw;
+}
+
+#autres .emo {
+  font-size: 2vw;
 }
 
 .contacts, .propos {
@@ -464,16 +618,62 @@ h1 .tilta2 {
           align-items: center;
   margin-top: 2vw;
   margin-bottom: 2vw;
+  font-size: 1.5vw;
+}
+
+#apropos {
+  display: none;
+}
+
+#apropos:target {
+  display: block;
+  -webkit-animation-name: apar;
+          animation-name: apar;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@keyframes apar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .propos {
   height: 300px;
   padding-top: 10vw;
+  font-size: 1.5vw;
 }
 
 .propos img {
-  padding-top: 3vw;
+  padding-top: 1vw;
   height: 10vw;
+}
+
+.propos .iconmaster {
+  margin-top: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 3vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1vw;
+}
+
+.propos .iconmaster i {
+  margin-right: 1vw;
 }
 
 .end {
