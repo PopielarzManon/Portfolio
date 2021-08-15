@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
 
   }
-  @media (min-width: 1279px) {
+  @media (min-width: 1024px) {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -16,7 +16,7 @@
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
     
-      background-color: rgb(30, 30, 30) ;
+      background-color: rgb(42, 42, 42) ;
     background-size: cover;
     margin: 0;
 
@@ -26,12 +26,7 @@
     color:rgb(67, 196, 153);
     
   }
-table{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
   a{
     list-style: none;
     color: rgb(221, 221, 221);
@@ -50,7 +45,7 @@ table{
     position: fixed;
     width: 100%;
     top: 0;
-    height: 80px;
+    height: 8vw;
     color: rgb(255, 255, 255);
     padding-top: 1vw;
     z-index: 3;
@@ -89,14 +84,14 @@ table{
   }
   h1{
     margin-top: 5vw;
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
     font-size: 2vw;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     justify-self: center;
     justify-items: center;
-    padding-top: 90px;
+    padding-top: 6vw;
     animation-name: apar;
     animation-duration: 3s;
     @keyframes apar {
@@ -188,10 +183,10 @@ table{
     align-items: center;
     color: rgba(255, 255, 255, 0.748);
     height: 280px;
-    padding-bottom: 50px;
     font-size: 1.5vw;
     animation-name: apar;
     animation-duration: 3s;
+    padding-bottom: 10vw;
     @keyframes apar {
       0%{
         opacity: 0;
@@ -234,14 +229,13 @@ table{
   }
 
 #portfolio{
-  
-  height: 500px;
   color: rgb(194, 194, 194);
   display: none;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding-top: 9vw;
+  padding-top: 11vw;
+  padding-bottom: 5vw;
   flex-direction: column;
   font-size: 1.5vw;
   
@@ -426,9 +420,9 @@ table{
     flex-direction: row;
   }
 #autres{
-  height: 300px;
-  padding-top: 15vw;
-  padding-bottom: 10vw;
+  
+  padding-top: 10vw;
+  padding-bottom: 5vw;
   color: aliceblue;
   flex-direction: column;
   justify-content: center;
@@ -489,7 +483,13 @@ table{
 #apropos{
   display: none;
   &:target{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3vw;
+    padding-bottom: 4vw;
+    width: 95%;
     animation-name: apar;
     animation-duration: 2s;
     @keyframes apar {
@@ -504,7 +504,6 @@ table{
   }
 }
 .propos{
-  height: 300px;
   padding-top: 10vw;
   font-size: 1.5vw;
   .diff{
@@ -532,8 +531,9 @@ table{
   
 }
   .end{
-    background-color: rgba(50, 50, 50, 0.789) ;
+    background-color: rgba(69, 69, 69, 0.789) ;
     padding-top: 1vw;
+    margin-top: 2vw;
     padding-bottom: 1vw;
     
     ul{
@@ -563,7 +563,7 @@ table{
   }
 }
 
-@media (min-width: 768px) and (max-width: 1278px){
+@media (min-width: 768px) and (max-width: 1023px){
   html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -869,7 +869,7 @@ table{
     width: 2vw;
     height: 2vw;
     margin: 8vw;
-    margin-top: 20vw;
+    margin-top: 30vw;
     border-radius: 50%;
     z-index: 10;
     outline: 6px solid rgb(255, 255, 255);
@@ -959,7 +959,7 @@ table{
   }
   .slider__txt {
     color: rgb(248, 248, 248);
-    margin-bottom: 3rem;
+    margin-bottom: 3vw;
     max-width: 50vw;
   }
   

@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 
-@media (min-width: 1279px) {
+@media (min-width: 1024px) {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -14,28 +14,13 @@
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
-    background-color: #1e1e1e;
+    background-color: #2a2a2a;
     background-size: cover;
     margin: 0;
   }
   .diff {
     font-weight: bolder;
     color: #43c499;
-  }
-  table {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   a {
     list-style: none;
@@ -64,7 +49,7 @@
     position: fixed;
     width: 100%;
     top: 0;
-    height: 80px;
+    height: 8vw;
     color: white;
     padding-top: 1vw;
     z-index: 3;
@@ -115,7 +100,7 @@
   }
   h1 {
     margin-top: 5vw;
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
     font-size: 2vw;
     color: white;
     display: -webkit-box;
@@ -126,7 +111,7 @@
             justify-content: center;
     justify-self: center;
     justify-items: center;
-    padding-top: 90px;
+    padding-top: 6vw;
     -webkit-animation-name: apar;
             animation-name: apar;
     -webkit-animation-duration: 3s;
@@ -272,12 +257,12 @@
             align-items: center;
     color: rgba(255, 255, 255, 0.748);
     height: 280px;
-    padding-bottom: 50px;
     font-size: 1.5vw;
     -webkit-animation-name: apar;
             animation-name: apar;
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
+    padding-bottom: 10vw;
   }
   @keyframes apar {
     0% {
@@ -321,7 +306,6 @@
     font-weight: bold;
   }
   #portfolio {
-    height: 500px;
     color: #c2c2c2;
     display: none;
     -webkit-box-orient: vertical;
@@ -334,7 +318,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 9vw;
+    padding-top: 11vw;
+    padding-bottom: 5vw;
     flex-direction: column;
     font-size: 1.5vw;
   }
@@ -526,9 +511,8 @@
             flex-direction: row;
   }
   #autres {
-    height: 300px;
-    padding-top: 15vw;
-    padding-bottom: 10vw;
+    padding-top: 10vw;
+    padding-bottom: 5vw;
     color: aliceblue;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -613,7 +597,22 @@
     display: none;
   }
   #apropos:target {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 3vw;
+    padding-bottom: 4vw;
+    width: 95%;
     -webkit-animation-name: apar;
             animation-name: apar;
     -webkit-animation-duration: 2s;
@@ -628,7 +627,6 @@
     }
   }
   .propos {
-    height: 300px;
     padding-top: 10vw;
     font-size: 1.5vw;
   }
@@ -662,8 +660,9 @@
     margin-right: 1vw;
   }
   .end {
-    background-color: rgba(50, 50, 50, 0.789);
+    background-color: rgba(69, 69, 69, 0.789);
     padding-top: 1vw;
+    margin-top: 2vw;
     padding-bottom: 1vw;
   }
   .end ul {
@@ -699,7 +698,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1278px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -1105,7 +1104,7 @@
     width: 2vw;
     height: 2vw;
     margin: 8vw;
-    margin-top: 20vw;
+    margin-top: 30vw;
     border-radius: 50%;
     z-index: 10;
     outline: 6px solid white;
@@ -1193,7 +1192,7 @@
   }
   .slider__txt {
     color: #f8f8f8;
-    margin-bottom: 3rem;
+    margin-bottom: 3vw;
     max-width: 50vw;
   }
   @-webkit-keyframes check {
