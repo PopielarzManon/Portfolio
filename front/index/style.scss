@@ -8,7 +8,7 @@
 
   }
   
-  @media (min-width : 200px) and (max-width : 767px) {
+  @media (max-width: 498px) {
      html, body {
       max-width: 100%;
       overflow-x: hidden;
@@ -616,7 +616,7 @@
       }
     }
   }
-  @media (min-width: 768px) and (max-width: 1023px){
+  @media (min-width: 497px) and (max-width: 769px){
     html, body {
       max-width: 100%;
       overflow-x: hidden;
@@ -1219,7 +1219,7 @@
     
     
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 770px) {
   html, body {
     max-width: 100%;
     overflow-x: hidden;
