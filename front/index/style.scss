@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
 
   }
+  
   @media (min-width : 200px) and (max-width : 767px) {
      html, body {
       max-width: 100%;
@@ -20,6 +21,14 @@
       background-size: cover;
       margin: 0;
   
+    }
+    h3{
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: bold;
+      border-bottom: solid 1px white;
+      margin-bottom: 1vw;
+      padding-bottom: 1vw;
+      font-size: 5vw;
     }
     .diff{
       font-weight: bolder;
@@ -136,6 +145,9 @@
       transform: none;
     }
    .subtittle{
+     &:hover{
+       border-bottom: 1px solid white;
+     }
     img{
       display: none;
     }
@@ -618,6 +630,14 @@
       margin: 0;
   
     }
+    h3{
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: bold;
+      border-bottom: solid 1px white;
+      margin-bottom: 1vw;
+      padding-bottom: 1vw;
+      font-size: 4vw;
+    }
     .toggle{
       display: none;
     }
@@ -663,13 +683,16 @@
         justify-content: center;
         text-align: center;
         font-size: 3vw;
-        padding-bottom: 1vw;
+        padding-bottom: 4vw;
         list-style: none;
         .subtittle{
           margin-top: 2vw;
-          margin-bottom: 3vw;
+          margin-bottom: 5vw;
           margin-right: 6vw;
           margin-left: 6vw;
+          &:hover{
+            border-bottom: white 1px solid;
+          }
         }
    
       }
@@ -1210,6 +1233,13 @@
     margin: 0;
 
   }
+  h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    border-bottom: solid 1px white;
+    margin-bottom: 1vw;
+    padding-bottom: 1vw;
+  }
   .toggle{
     display: none;
   }
@@ -1262,8 +1292,11 @@
         margin-bottom: 1vw;
         margin-right: 2vw;
         margin-left: 2vw;
+        &:hover{
+          border-bottom: 1px solid white;
       }
       
+      }
     }
     .tittle1{
       font-size: 2vw;
@@ -1284,17 +1317,7 @@
     justify-self: center;
     justify-items: center;
     padding-top: 6vw;
-    animation-name: apar;
-    animation-duration: 3s;
-    @keyframes apar {
-      0%{
-        opacity: 0;
-      }
-      100%{
-        opacity: 1;
-      }
-      
-    }
+
     .tilta{
       animation: tilta 1s  infinite ease-in-out;
       
@@ -1356,17 +1379,18 @@
   #up{
     padding-top: 2vw;
     &:target{
-      animation-name: apar;
-    animation-duration: 2s;
-    @keyframes apar {
-      0%{
-        opacity: 0;
+      animation: zoom 1s ease-in-out;
+      @keyframes zoom {
+        0%{
+          
+          opacity: 0;
+        }
+        100%{
+         
+          opacity: 1;
+          
+        }
       }
-      100%{
-        opacity: 1;
-      }
-      
-    }
     }
   }
   #prez{
@@ -1377,18 +1401,21 @@
     color: rgba(255, 255, 255, 0.748);
     height: 280px;
     font-size: 1.5vw;
-    animation-name: apar;
-    animation-duration: 3s;
-    padding-bottom: 10vw;
-    @keyframes apar {
-      0%{
-        opacity: 0;
+    &:target{
+      animation: zoom 1s ease-in-out;
+      @keyframes zoom {
+        0%{
+          
+          opacity: 0;
+        }
+        100%{
+         
+          opacity: 1;
+          
+        }
       }
-      100%{
-        opacity: 1;
-      }
-      
     }
+    
   
     p{
       text-align: center;
@@ -1423,7 +1450,7 @@
 
 #portfolio{
   color: rgb(194, 194, 194);
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
@@ -1431,21 +1458,21 @@
   padding-bottom: 5vw;
   flex-direction: column;
   font-size: 1.5vw;
-  
-  &:target{
     display: flex;
-    animation-name: apar;
-    animation-duration: 2s;
-    @keyframes apar {
-      0%{
-        opacity: 0;
+    &:target{
+      animation: zoom 1s ease-in-out;
+      @keyframes zoom {
+        0%{
+          
+          opacity: 0;
+        }
+        100%{
+         
+          opacity: 1;
+          
+        }
       }
-      100%{
-        opacity: 1;
-      }
-      
     }
-  }
   .port{
     display: flex;
     flex-direction: column;
@@ -1621,23 +1648,26 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5vw;
-  display: none;
+  display: flex;
   &:target{
-    &:target{
-      display: flex;
-      animation-name: apar;
-      animation-duration: 2s;
-      @keyframes apar {
-        0%{
-          opacity: 0;
-        }
-        100%{
-          opacity: 1;
-        }
+    animation: zoom 1s ease-in-out;
+    @keyframes zoom {
+      0%{
+        
+        opacity: 0;
+      }
+      100%{
+       
+        opacity: 1;
         
       }
     }
   }
+
+    
+      
+    
+  
   div {
     display: flex;
     flex-direction: column;
@@ -1674,8 +1704,6 @@
   
 }
 #apropos{
-  display: none;
-  &:target{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1683,19 +1711,22 @@
     margin-left: 3vw;
     padding-bottom: 4vw;
     width: 95%;
-    animation-name: apar;
-    animation-duration: 2s;
-    @keyframes apar {
-      0%{
-        opacity: 0;
+    &:target{
+      animation: zoom 1s ease-in-out;
+      @keyframes zoom {
+        0%{
+          
+          opacity: 0;
+        }
+        100%{
+         
+          opacity: 1;
+          
+        }
       }
-      100%{
-        opacity: 1;
-      }
-      
     }
+   
   }
-}
 .propos{
   padding-top: 10vw;
   font-size: 1.5vw;
