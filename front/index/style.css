@@ -229,6 +229,9 @@
               transform-origin: 0% 50%;
     }
   }
+  #up {
+    padding-top: 2vw;
+  }
   #up:target {
     -webkit-animation-name: apar;
             animation-name: apar;
