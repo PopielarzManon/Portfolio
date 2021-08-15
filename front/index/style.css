@@ -730,6 +730,9 @@
     background-size: cover;
     margin: 0;
   }
+  .toggle {
+    display: none;
+  }
   .diff {
     font-weight: bolder;
     color: #43c499;
@@ -1466,6 +1469,9 @@
     background-color: #2a2a2a;
     background-size: cover;
     margin: 0;
+  }
+  .toggle {
+    display: none;
   }
   .diff {
     font-weight: bolder;

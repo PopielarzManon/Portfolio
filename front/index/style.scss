@@ -618,6 +618,9 @@
       margin: 0;
   
     }
+    .toggle{
+      display: none;
+    }
     .diff{
       font-weight: bolder;
       color:rgb(67, 196, 153);
@@ -1206,6 +1209,9 @@
     background-size: cover;
     margin: 0;
 
+  }
+  .toggle{
+    display: none;
   }
   .diff{
     font-weight: bolder;
