@@ -12,10 +12,6 @@ em {
   color: #43c499;
 }
 
-strong a {
-  color: #43c499;
-}
-
 strong a:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
