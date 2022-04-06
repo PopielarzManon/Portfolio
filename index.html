@@ -1,36 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popielarz Manon</title>
+  <link rel="icon" type="image/png" href="./img/favicon.png" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
 
-    <title>Popielarz Manon</title>
-    <link href="lstyle.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./img/favicon.png" />
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <script type = "text/javascript">  
- function Redirect() 
-    {  
-        window.location="front/index/index2.html"; 
-    } 
-    setTimeout('Redirect()', 7000);   
-      </script>  
 </head>
 
-
 <body>
-<div class="container">
-<h1>Nous réveillons le portfolio...</h1>
-<h2>Veuillez patienter....</h2>
-<audio autoplay>
-  <source src="audio/loading.ogg" type="audio/ogg"> 
-  <source src="audio/loading.mp3" type="audio/mp3"> 
-</audio>
-</div>
+  <div class="bloc">
+
+  </div>
+  <header>
+    <div class="plusheader">
+    <p> 
+     <a href="./index.html" class="base">MP | Portfolio - Accueil</a>
+    </p>
+
+    
+    </div>
+    <ul class="">
+      <li><a href="./pages/graph/indexgr.html" class="">Graphisme</a></li>
+      
+      <li><a href="/pages/video/indexv.html">Vidéos</a></li>
+      <li><a href="./pages/jv/indexjv.html" class="">Jeu-Vidéo</a></li>
+    </ul>
+  </header>
+
+
+  <section id="corps">
+    <img src="./plus/img/ava.png">
+    <div class="contactbloc">
+      <div class="content">
+        <div class="photo">
+        </div>
+        <h2>Popielarz Manon</h2>
+
+        <p>Graphiste Polyvalente</p>
+
+      </div>
+    </div>
+  </section>
+  <section id="texte">
+    <h1>Bienvenue</h1>
+    <div class="boutons">
+      <a href="/plus/files/CV_POPIELARZ_GRAPHISTE.pdf" download>
+        <button type="button">
+          CV
+      </button>
+      </a>
+
+      <button type="button" id="myBtn">
+        Où me trouver ?
+      </button>
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Contact</h3>
+          <div class="contact">
+            <ul>
+              <li>
+                <a href="mailto:popielarzmanon@gmail.com" target="_blank" class="tooltip"><i class="far fa-envelope"></i><span class="tooltiptext"> Mail </span></a>
+                
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/manon-popielarz-0bb5291a9" target="_blank"class="tooltip"><i
+                    class="fab fa-linkedin"></i>
+                    <span class="tooltiptext"> Linkedin </span>
+                  </a>
+              </li>
+              <li>
+                <a href="https://www.artstation.com/manonpopielarz7" target="_blank"class="tooltip"><i class="fab fa-artstation"></i><span class="tooltiptext"> ArtStation </span></a>
+                
+              </li>
+            </ul>
+          </div>
+          <p></p>
+        </div>
+      
+      </div>
+    </div>
+
+    <div class="txt">
+
+      <p>
+        Parcours
+
+      </p>
+      <ul class="parcourstxt">
+        <li>
+          Développeur Web<br>
+          <p class="uwu">OpenClassrooms</p>
+
+        </li>
+        <li>
+          Licence d'Etudes Visuelles,<br>Multimédia,Arts Numériques<br>
+          <p class="uwu">Université Gustave Eiffel</p>
+
+        </li>
+      </ul>
+    </div>
+    <img src="./plus/img/arrow.png">
+  </section>
+
+
+  <footer>
+    <ul>
+
+    <div class="hihi">
+           <p class="cop">
+        Copyright @Popielarz Manon - 2022
+      </p>
+      <p class="cop">
+        Made with love
+      </p>
+    </div>
+    </ul>
+
+
+  </footer>
 </body>
+
 </html>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
 
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
