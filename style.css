@@ -8,7 +8,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: white;
 }
 
@@ -17,455 +17,1244 @@ a {
   text-decoration: none;
 }
 
-.bloc {
-  background-color: #d0e5df;
-  width: 30vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: white;
-  -webkit-box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
-          box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
-}
-
-header ul {
-  width: 100vw;
-  height: 10vh;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header ul li {
-  font-size: 1.2vw;
-  padding-right: 2vw;
-}
-
-header ul li:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-header a {
-  color: #555;
-  text-decoration: none;
-}
-
-header a:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  color: black;
-}
-
-header .plusheader {
-  margin-left: 2vw;
-  width: 50vw;
-}
-
-header .plusheader .base {
-  font-family: 'Limelight', cursive;
-  font-size: 1.5vw;
-  text-align: left;
-}
-
-header .plusheader .base:hover {
-  font-family: 'Limelight', cursive;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  text-align: left;
-  background-color: transparent;
-}
-
-h2 {
-  color: black;
-  padding: 1vw;
-  margin-top: 4vh;
-  font-size: 2vw;
-}
-
-#corps {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 90vh;
-  color: #520b5a;
-}
-
-#corps img {
-  position: absolute;
-  height: 60vh;
-  z-index: 5;
-  padding-right: 10vw;
-  padding-bottom: 7vw;
-}
-
-#corps .contactbloc {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f4dced;
-  width: 30vw;
-  height: 60vh;
-  padding-bottom: 1vh;
-  margin-top: 5vh;
-  margin-right: 20vw;
-  border-radius: 10%;
-  -webkit-box-shadow: -9px 5px 5px 5px rgba(0, 0, 0, 0.07);
-          box-shadow: -9px 5px 5px 5px rgba(0, 0, 0, 0.07);
-}
-
-#corps .contactbloc .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  width: 100%;
-}
-
-#corps .contactbloc .content .photo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 70%;
-  width: 70%;
-  margin-top: 2vh;
-}
-
-#corps p {
-  font-size: 1.3vw;
-  margin-bottom: 1vh;
-}
-
-#texte {
-  width: 75vh;
-  height: 70vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 20vh;
-  margin-right: 3vw;
-  text-align: center;
-}
-
-#texte img {
-  position: absolute;
-  height: 40vh;
-  z-index: -1;
-  padding-right: 22vw;
-  padding-top: 25vh;
-}
-
-#texte h1 {
-  font-family: 'Limelight';
-  font-size: 3vw;
-}
-
-#texte .boutons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1vw;
-  width: 80%;
-  /* Modal Content/Box */
-  /* The Close Button */
-}
-
-#texte .boutons button {
-  width: 11.5vw;
-  height: 3vw;
-  background-color: #fff1c5;
-  border: none;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 1.3vw;
-  margin-right: 1vw;
-  cursor: pointer;
-}
-
-#texte .boutons button:hover {
-  background-color: #ffd39d;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-#texte .boutons .modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 12;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-  -webkit-animation: fadein 0.5s;
-          animation: fadein 0.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
+@media (max-width: 498px) {
+  .bloc {
+    display: none;
   }
-  to {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    -webkit-box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
+            box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
+  }
+  header ul {
+    width: 100vw;
+    height: 10vh;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header ul li {
+    font-size: 4vw;
+    padding: 10vw;
+    text-align: center;
+  }
+  header ul li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  header a {
+    color: black;
+    text-decoration: none;
+  }
+  header a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: black;
+  }
+  header .plusheader {
+    display: none;
+  }
+  header .plusheader .base {
+    font-family: 'Limelight', cursive;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+  header .plusheader .base:hover {
+    font-family: 'Limelight', cursive;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    text-align: left;
+    background-color: transparent;
+  }
+  h2 {
+    color: black;
+    padding: 1vw;
+    margin-top: 4vh;
+    font-size: 5vw;
+  }
+  #corps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vh;
+    color: #520b5a;
+  }
+  #corps img {
+    position: absolute;
+    height: 55vh;
+    z-index: 5;
+    padding-left: 12vw;
+  }
+  #corps .contactbloc {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f4dced;
+    width: 80vw;
+    height: 70vh;
+    padding-bottom: 1vh;
+    margin-top: 15vh;
+    border-radius: 25px;
+    -webkit-box-shadow: -9px 5px 5px 5px rgba(0, 0, 0, 0.07);
+            box-shadow: -9px 5px 5px 5px rgba(0, 0, 0, 0.07);
+  }
+  #corps .contactbloc .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  #corps .contactbloc .content .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70%;
+    width: 70%;
+    margin-top: 2vh;
+  }
+  #corps p {
+    font-size: 3vw;
+    margin-bottom: 1vh;
+  }
+  #texte {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 100vh;
+    text-align: center;
+  }
+  #texte img {
+    position: absolute;
+    height: 50vh;
+    z-index: -1;
+    padding-right: 80vw;
+    padding-top: 25vh;
+  }
+  #texte h1 {
+    font-family: 'Limelight';
+    font-size: 6vw;
+  }
+  #texte .boutons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2vw;
+    width: 80%;
+    /* Modal Content/Box */
+    /* The Close Button */
+  }
+  #texte .boutons button {
+    width: 30vw;
+    height: 15vw;
+    background-color: #fff1c5;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 5vw;
+    margin: 2vw;
+    z-index: 10;
+    cursor: pointer;
+  }
+  #texte .boutons button:hover {
+    background-color: #ffd39d;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #texte .boutons .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 12;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation: fadein 0.5s;
+            animation: fadein 0.5s;
+  }
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #texte .boutons .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+    height: 80%;
+    border-radius: 25px;
+  }
+  #texte .boutons .close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #texte .boutons .close:hover,
+  #texte .boutons .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #texte .contact h3 {
+    font-size: 10vw;
+  }
+  #texte .contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 10vw;
+    padding: 5vw;
+  }
+  #texte .contact ul li {
+    padding: 10vw;
+    /* Tooltip text */
+    /* Tooltip arrow */
+    /* Show the tooltip text when you mouse over the tooltip container */
+  }
+  #texte .contact ul li a {
+    color: #d889e4;
+    text-decoration: none;
+  }
+  #texte .contact ul li a:hover {
+    color: #88ebd6;
+  }
+  #texte .contact ul li .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  #texte .contact ul li .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 1vw;
+    text-decoration: none;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  #texte .contact ul li .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  #texte .contact ul li .tooltip:hover .tooltiptext {
+    visibility: visible;
     opacity: 1;
   }
+  .txt {
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 1vw;
+  }
+  .parcourstxt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    width: 80%;
+    height: 100%;
+    padding-top: 5vh;
+    padding-left: 12vh;
+  }
+  .parcourstxt li {
+    padding: 2vw;
+    font-family: 'Limelight', cursive;
+    font-size: 4vw;
+    list-style: none;
+  }
+  .parcourstxt li p {
+    padding: 1vw;
+    font-size: 3vw;
+  }
+  footer {
+    background-color: white;
+    margin-top: 100vh;
+    width: 105vw;
+    height: 8vh;
+    -webkit-box-shadow: 4px -7px 10px 5px rgba(0, 0, 0, 0.066);
+            box-shadow: 4px -7px 10px 5px rgba(0, 0, 0, 0.066);
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #d9d9d9;
+    font-size: 4vw;
+  }
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
+@media (min-width: 497px) and (max-width: 1025px) {
+  * {
+    overflow: hidden;
   }
-  to {
+  .bloc {
+    background-color: #d0e5df;
+    width: 30vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    -webkit-box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
+            box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
+  }
+  header ul {
+    width: 100vw;
+    height: 10vh;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header ul li {
+    font-size: 1.2vw;
+    padding-right: 2vw;
+  }
+  header ul li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  header a {
+    color: #555;
+    text-decoration: none;
+  }
+  header a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: black;
+  }
+  header .plusheader {
+    margin-left: 2vw;
+    width: 50vw;
+  }
+  header .plusheader .base {
+    font-family: 'Limelight', cursive;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+  header .plusheader .base:hover {
+    font-family: 'Limelight', cursive;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    text-align: left;
+    background-color: transparent;
+  }
+  h2 {
+    color: black;
+    padding: 1vw;
+    margin-top: 4vh;
+    font-size: 2vw;
+  }
+  #corps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vh;
+    color: #520b5a;
+  }
+  #corps img {
+    position: absolute;
+    height: 60vh;
+    z-index: 5;
+    padding-right: 30vw;
+    padding-bottom: 7vw;
+  }
+  #corps .contactbloc {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f4dced;
+    width: 40vw;
+    height: 60vh;
+    padding-bottom: 1vh;
+    margin-top: 10vh;
+    margin-right: 35vw;
+    border-radius: 10%;
+    -webkit-box-shadow: -9px 5px 5px 5px rgba(0, 0, 0, 0.07);
+            box-shadow: -9px 5px 5px 5px rgba(0, 0, 0, 0.07);
+  }
+  #corps .contactbloc .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  #corps .contactbloc .content .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70%;
+    width: 70%;
+    margin-top: 2vh;
+  }
+  #corps p {
+    font-size: 1.3vw;
+    margin-bottom: 1vh;
+  }
+  #texte {
+    width: 75vh;
+    height: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20vh;
+    margin-right: 3vw;
+    text-align: center;
+  }
+  #texte img {
+    position: absolute;
+    height: 40vh;
+    z-index: -1;
+    padding-right: 22vw;
+    padding-top: 25vh;
+  }
+  #texte h1 {
+    font-family: 'Limelight';
+    font-size: 3vw;
+  }
+  #texte .boutons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1vw;
+    width: 80%;
+    padding-left: 5vw;
+    z-index: 10;
+    /* Modal Content/Box */
+    /* The Close Button */
+  }
+  #texte .boutons button {
+    width: 15vw;
+    height: 5vw;
+    background-color: #fff1c5;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.6vw;
+    margin-right: 1vw;
+    margin-top: 5vw;
+    z-index: 10;
+    cursor: pointer;
+  }
+  #texte .boutons button:hover {
+    background-color: #ffd39d;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #texte .boutons .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 12;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation: fadein 0.5s;
+            animation: fadein 0.5s;
+  }
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #texte .boutons .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    border-radius: 25px;
+  }
+  #texte .boutons .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #texte .boutons .close:hover,
+  #texte .boutons .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #texte .contact h3 {
+    font-size: 2vw;
+  }
+  #texte .contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 3vw;
+    padding: 2vw;
+  }
+  #texte .contact ul li {
+    padding: 2vw;
+    /* Tooltip text */
+    /* Tooltip arrow */
+    /* Show the tooltip text when you mouse over the tooltip container */
+  }
+  #texte .contact ul li a {
+    color: #d889e4;
+    text-decoration: none;
+  }
+  #texte .contact ul li a:hover {
+    color: #88ebd6;
+  }
+  #texte .contact ul li .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  #texte .contact ul li .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 1vw;
+    text-decoration: none;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  #texte .contact ul li .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  #texte .contact ul li .tooltip:hover .tooltiptext {
+    visibility: visible;
     opacity: 1;
   }
+  #texte .txt {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 1vw;
+  }
+  #texte .parcourstxt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding-top: 5vh;
+    padding-left: 12vh;
+  }
+  #texte .parcourstxt li {
+    padding: 2vw;
+    font-family: 'Limelight', cursive;
+    font-size: 1.5vw;
+    list-style: none;
+  }
+  #texte .parcourstxt li p {
+    padding: 1vw;
+    font-size: 1vw;
+  }
+  footer {
+    background-color: white;
+    margin-top: 5vh;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+    -webkit-box-shadow: 4px -7px 10px 5px rgba(0, 0, 0, 0.066);
+            box-shadow: 4px -7px 10px 5px rgba(0, 0, 0, 0.066);
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #d9d9d9;
+    font-size: 1vw;
+  }
 }
 
-#texte .boutons .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  /* Could be more or less, depending on screen size */
-  border-radius: 25px;
-}
-
-#texte .boutons .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-#texte .boutons .close:hover,
-#texte .boutons .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#texte .contact h3 {
-  font-size: 2vw;
-}
-
-#texte .contact ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 3vw;
-  padding: 2vw;
-}
-
-#texte .contact ul li {
-  padding: 2vw;
-  /* Tooltip text */
-  /* Tooltip arrow */
-  /* Show the tooltip text when you mouse over the tooltip container */
-}
-
-#texte .contact ul li a {
-  color: #d889e4;
-  text-decoration: none;
-}
-
-#texte .contact ul li a:hover {
-  color: #88ebd6;
-}
-
-#texte .contact ul li .tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-#texte .contact ul li .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  font-size: 1vw;
-  text-decoration: none;
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  /* Fade in tooltip */
-  opacity: 0;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-#texte .contact ul li .tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-#texte .contact ul li .tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-#texte .txt {
-  font-size: 2vw;
-  text-align: center;
-}
-
-#texte .parcourstxt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  padding-top: 5vh;
-  padding-left: 12vh;
-}
-
-#texte .parcourstxt li {
-  padding: 2vw;
-  font-family: 'Limelight', cursive;
-  font-size: 1.5vw;
-  list-style: none;
-}
-
-#texte .parcourstxt li p {
-  padding: 1vw;
-  font-size: 1vw;
-}
-
-footer {
-  background-color: white;
-  margin-top: 5vh;
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height: 8vh;
-  -webkit-box-shadow: 4px -7px 10px 5px rgba(0, 0, 0, 0.066);
-          box-shadow: 4px -7px 10px 5px rgba(0, 0, 0, 0.066);
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #d9d9d9;
-  font-size: 1vw;
+@media (min-width: 1026px) {
+  * {
+    overflow: hidden;
+  }
+  .bloc {
+    background-color: #d0e5df;
+    width: 30vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    -webkit-box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
+            box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
+  }
+  header ul {
+    width: 100vw;
+    height: 10vh;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header ul li {
+    font-size: 1.2vw;
+    padding-right: 2vw;
+  }
+  header ul li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  header a {
+    color: black;
+    text-decoration: none;
+  }
+  header a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: black;
+  }
+  header .plusheader {
+    margin-left: 2vw;
+    width: 50vw;
+  }
+  header .plusheader .base {
+    font-family: 'Limelight', cursive;
+    font-size: 1.5vw;
+    text-align: left;
+  }
+  header .plusheader .base:hover {
+    font-family: 'Limelight', cursive;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    text-align: left;
+    background-color: transparent;
+  }
+  h2 {
+    color: black;
+    padding: 1vw;
+    margin-top: 4vh;
+    font-size: 2vw;
+  }
+  #corps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 90vh;
+    color: #520b5a;
+  }
+  #corps img {
+    position: absolute;
+    height: 60vh;
+    z-index: 5;
+    padding-right: 16vw;
+    padding-bottom: 7vw;
+  }
+  #corps .contactbloc {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #f4dced;
+    width: 30vw;
+    height: 60vh;
+    padding-bottom: 1vh;
+    margin-top: 5vh;
+    margin-right: 25vw;
+    border-radius: 10%;
+    -webkit-box-shadow: -9px 5px 5px 5px rgba(0, 0, 0, 0.07);
+            box-shadow: -9px 5px 5px 5px rgba(0, 0, 0, 0.07);
+  }
+  #corps .contactbloc .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  #corps .contactbloc .content .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70%;
+    width: 70%;
+    margin-top: 2vh;
+  }
+  #corps p {
+    font-size: 1.3vw;
+    margin-bottom: 1vh;
+  }
+  #texte {
+    width: 75vh;
+    height: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 20vh;
+    margin-right: 3vw;
+    text-align: center;
+  }
+  #texte img {
+    position: absolute;
+    height: 40vh;
+    z-index: -1;
+    padding-right: 22vw;
+    padding-top: 25vh;
+  }
+  #texte h1 {
+    font-family: 'Limelight';
+    font-size: 3vw;
+  }
+  #texte .boutons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1vw;
+    width: 80%;
+    /* Modal Content/Box */
+    /* The Close Button */
+  }
+  #texte .boutons button {
+    width: 11.5vw;
+    height: 3vw;
+    background-color: #fff1c5;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.3vw;
+    margin-right: 1vw;
+    cursor: pointer;
+  }
+  #texte .boutons button:hover {
+    background-color: #ffd39d;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #texte .boutons .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 12;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: black;
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation: fadein 0.5s;
+            animation: fadein 0.5s;
+  }
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  #texte .boutons .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    border-radius: 25px;
+  }
+  #texte .boutons .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  #texte .boutons .close:hover,
+  #texte .boutons .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #texte .contact h3 {
+    font-size: 2vw;
+  }
+  #texte .contact ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    list-style: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 3vw;
+    padding: 2vw;
+  }
+  #texte .contact ul li {
+    padding: 2vw;
+    /* Tooltip text */
+    /* Tooltip arrow */
+    /* Show the tooltip text when you mouse over the tooltip container */
+  }
+  #texte .contact ul li a {
+    color: #d889e4;
+    text-decoration: none;
+  }
+  #texte .contact ul li a:hover {
+    color: #88ebd6;
+  }
+  #texte .contact ul li .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  #texte .contact ul li .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 1vw;
+    text-decoration: none;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+  }
+  #texte .contact ul li .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  #texte .contact ul li .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  #texte .txt {
+    font-size: 2vw;
+    text-align: center;
+  }
+  #texte .parcourstxt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding-top: 5vh;
+    padding-left: 12vh;
+  }
+  #texte .parcourstxt li {
+    padding: 2vw;
+    font-family: 'Limelight', cursive;
+    font-size: 1.5vw;
+    list-style: none;
+  }
+  #texte .parcourstxt li p {
+    padding: 1vw;
+    font-size: 1vw;
+  }
+  footer {
+    background-color: white;
+    margin-top: 5vh;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+    -webkit-box-shadow: 4px -7px 10px 5px rgba(0, 0, 0, 0.066);
+            box-shadow: 4px -7px 10px 5px rgba(0, 0, 0, 0.066);
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #d9d9d9;
+    font-size: 1vw;
+    position: fixed;
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
