@@ -21,6 +21,11 @@ a {
 }
 
 @media (max-width: 498px) {
+    .overflow {
+        overflow-x: hidden;
+    
+    
+    }
 
     .bloc {
         // background-color: rgb(208, 229, 223);
@@ -29,7 +34,7 @@ a {
         // position: absolute;
         // top: 0;
         // z-index: -1;
-display: none;
+        display: none;
     }
 
 
@@ -38,7 +43,7 @@ display: none;
         display: flex;
         position: absolute;
         top: 0;
-        width: 100%;
+        width: 100vw;
         height: 10vh;
         display: flex;
         flex-direction: row;
@@ -427,6 +432,7 @@ display: none;
 
 
 
+    
     header {
         display: flex;
         position: absolute;
@@ -441,7 +447,7 @@ display: none;
         box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
 
         ul {
-            width: 100vw;
+            width: 45vw;
             height: 10vh;
             list-style: none;
             display: flex;
@@ -452,8 +458,8 @@ display: none;
 
 
             li {
-                font-size: 1.2vw;
-                padding-right: 2vw;
+                font-size: 1.5vw;
+                padding-right: 3vw;
 
                 &:hover {
                     transform: scale(1.1);

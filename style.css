@@ -18,6 +18,9 @@ a {
 }
 
 @media (max-width: 498px) {
+  .overflow {
+    overflow-x: hidden;
+  }
   .bloc {
     display: none;
   }
@@ -27,7 +30,7 @@ a {
     display: flex;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -457,7 +460,7 @@ a {
             box-shadow: 1px 7px 10px 5px rgba(0, 0, 0, 0.066);
   }
   header ul {
-    width: 100vw;
+    width: 45vw;
     height: 10vh;
     list-style: none;
     display: -webkit-box;
@@ -475,8 +478,8 @@ a {
             align-items: center;
   }
   header ul li {
-    font-size: 1.2vw;
-    padding-right: 2vw;
+    font-size: 1.5vw;
+    padding-right: 3vw;
   }
   header ul li:hover {
     -webkit-transform: scale(1.1);
